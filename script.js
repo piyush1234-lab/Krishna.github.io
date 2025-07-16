@@ -21,7 +21,7 @@
       }
       function updatepage(){
   const today = new Date();
-  const janmasthmi = today.getDate() === 17 && today.getMonth() === 6; // July is month 6 (0-based)
+  const janmasthmi = today.getDate() === 15 && today.getMonth() === 7; // July is month 6 (0-based)
 
   if (janmasthmi) {
   const bgImages = [
