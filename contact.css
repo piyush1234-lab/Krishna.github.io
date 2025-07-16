@@ -1,0 +1,258 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #111;
+    width: 100%;
+  }
+    body {
+      width: 100%;
+      margin: 0;
+      background: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+.menu-box1 {
+  position: absolute;
+  top:30px;
+  left:617px;
+  display: flex;
+  gap: 20px;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 5px;
+  z-index: 10;
+  margin: 5px 10px;
+}
+ .verse {
+      font-size: 35px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      opacity: 1;
+      position: absolute;
+      top: 500px;
+      width: 100vw;
+      max-width: 100%;
+      display: block;
+      z-index: 5;
+      text-shadow: 0px 0px 15px black;
+    }
+    .d {
+      font-weight: bold;
+      color: white;
+      padding: 5px 15px;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+      border: 1px solid white;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(4px);
+      box-shadow: 0px 0px 10px black;
+      transition: 0.3s;
+    }
+
+    marquee {
+    
+      color: white;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 18px;
+      width: 100%;
+      text-shadow: 0px 0px 15px black;
+      word-spacing: 5px;
+      background: grey;
+      padding: 5px;
+      padding-bottom:10px;
+    }
+
+    .bg {
+      position: relative;
+      top:0px;
+      height:1600px;
+      width:100%;
+      padding: 100px 10px 120px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1), rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url('contact.jpeg') center center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+      text-align: center;
+      
+      }
+  .bg1{
+     background: url('back.png') center/cover no-repeat;
+      position:relative;
+      left:-270px;
+      top: 700px;
+      height: 800px;
+      width:100%;
+      z-index:10;
+      transform: scale(0.5);
+     filter: drop-shadow(0px 0px 50px rgba(255,215,0,0.5));
+      }
+      
+.footer-box {
+  position: relative; /* or fixed if you want it stuck at bottom */
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: rgba(255,255,255,0.2);
+  padding: 5px 0;
+  box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.1);
+  z-index: 1000; /* so it stays above background */
+}
+
+    .footer-icon {
+      color: white;
+      font-size: 16px;
+      padding: 10px 15px;
+      border: 1px solid white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+      text-shadow: 0 0 5px black;
+      
+      
+    }
+  .contact-form{
+  background: rgba(250,250,250,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+  margin-top: 50px;
+  color: white;
+  z-index: 5;
+   box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.8);
+position:absolute;
+transform: scale(1.5);
+}
+input{
+  width: 250px;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  align-items:center;
+  text-align:center;
+  box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.5);
+  
+}
+.contact-form button {
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+label {
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+ .footer-copy {
+  position: absolute;
+  bottom: 5px;
+  left: 90%;
+  transform: translateX(-50%, -50%);
+  color: white;
+  font-size: 13px;
+  text-shadow: 0 0 5px black;
+  white-space: nowrap;
+}
+ /* Mobile Responsive */
+    @media (max-width: 768px) {
+    html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+      .menu-box1 {
+        left: 175px;
+        top: 5px;
+        flex-direction: row;
+        gap: 15px;
+        transform: scale(0.7);
+      }
+
+      .d {
+        font-size: 14px;
+        padding: 6px 10px;
+      }
+      marquee {
+      
+        font-size: 10px;
+        padding:3px;
+        padding-bottom: 5px;
+        
+      }
+      .bg {
+          height: 543px;
+      }
+      .bg1 {
+      position: relative;
+          top: 300px;
+          left: -115px;
+          height:323.7px;
+          z-index:999;
+    }
+    .footer-box {
+    bottom:0;
+        padding: 0px;
+        gap:20px;
+    }
+    .footer-icon {
+        padding: 5px 10px;
+        transform:scale(0.9);
+    }
+      .verse {
+      top:400px;
+        font-size: 15px;
+        padding: 20px;
+      }
+  .contact-form {
+  left:5%;
+    padding: 15px;
+    width:100%;
+    margin-top: 20px;
+    max-width: 350px;
+    font-size: 13px;
+    transform:scale(1);
+top:225px;
+  }
+
+  .contact-form label {
+    font-size: 13px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+  input{
+      width:250px;
+  }
+    }
+    @media (min-width: 1024px) {
+            .menu-box1{
+                right:0;
+            }
+        }

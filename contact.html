@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>krishna's blessing</title>
+<link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="menu-box1">
+      <div class="d" onclick="tou1(this); window.location.href='index.html'" ontouchstart="tou1(this)" ontouchend="touend1(this)"onmouseover="tou1(this)" onmouseout="touend1(this)">Home</div>
+      <div class="d" onclick="tou1(this); window.location.href='teachings.html'" ontouchstart="tou1(this)" ontouchend="touend1(this)"
+     onmouseover="tou1(this)" onmouseout="touend1(this)" >Teachings</div>
+      <div class="d" onclick="tou1(this); window.location.href='contact.html'"ontouchstart="tou1(this)" ontouchend="touend1(this)" onmouseover="tou1(this)" onmouseout="touend1(this)">Contact
+      </div>
+    </div>
+    <marquee scrollamount="8">This Is A Page Solely Designed, Created And Build By piyush___editz__.</marquee>
+
+  <main>
+    <div class="bg" id="bg0">
+        <div class="bg1"></div>
+     <div class="contact-form">
+            <form id="contact" action="https://formsubmit.co/sagarwal2k20@gmail.com" method="post">
+                <h3>Fill In The Information</h3>
+            <label for="name">Name - </label>
+            <input id="name" name="name" type="text" onfocus="inpu(this)" onblur="deinpu(this)"><br>
+             <label for="phone">Phone - </label>
+            <input id="phone" name="phone" type="tel" maxlength="10" onfocus="inpu(this)" onblur="deinpu(this)"><br>
+             <label for="email">Email -    </label>
+            <input id="email" name="email" type="email" onfocus="inpu(this)" onblur="deinpu(this)"><br>
+             <label for="purpose">Purpose - </label>
+          <input id="purpose" name="purpose" type="text" onfocus="inpu(this)" onblur="deinpu(this)"><br>
+              <!-- Optional: redirect after submission -->
+  <input type="hidden" name="_next" value="https://piyush1234-lab.github.io/Piyush1234.github.io/redirect.html">
+  <!-- Disable Captcha -->
+<input type="hidden" name="_captcha" value="false">
+
+<!-- Custom email subject -->
+<input type="hidden" name="_subject" value="Someone Wants To Contact You"><br>
+<button type="submit" onmouseover="shad(this)" ontouchstart="shad(this)" onmouseout="deshad(this)" ontouchend="deshad(this)" onclick="validation();deshad1(this)">Submit</button>
+            </form>
+        </div>
+        </div>
+
+  <footer class="footer-box">
+    <a href="https://www.instagram.com/piyush___editz__?igsh=MWx1aGFmaDVrdTZ0Mw==" target="_blank" class="footer-icon" onclick="tou11(this)" ontouchstart="tou11(this)" ontouchend="touend11(this)"
+   onmouseover="tou11(this)" onmouseout="touend11(this)" ><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/share/19QSR46GN4/" target="_blank" class="footer-icon" onclick="tou11(this)" ontouchstart="tou11(this)" ontouchend="touend11(this)"
+   onmouseover="tou11(this)" onmouseout="touend11(this)" ><i class="fab fa-facebook"></i></a>
+    <a href="mailto:sagarwal2k20@gmail.com" class="footer-icon" onclick="tou11(this)" ontouchstart="tou11(this)" ontouchend="touend11(this)"
+onmouseover="tou11(this)" onmouseout="touend11(this)"><i class="fas fa-envelope"></i></a>
+  </footer>
+ <script src="contact.js"> 
+</script>
+</body>
+</html>
