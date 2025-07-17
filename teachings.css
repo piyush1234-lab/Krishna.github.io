@@ -275,6 +275,6 @@ html, body {
     }
         @media (min-width: 1024px) {
             .menu-box1{
-                right:0;
+                left:65%;
             }
         }
