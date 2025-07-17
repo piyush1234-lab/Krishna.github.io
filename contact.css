@@ -72,7 +72,7 @@ html, body {
     .bg {
       position: relative;
       top:0px;
-      height:1600px;
+      height:1578px;
       width:100%;
       padding: 100px 10px 120px;
       background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1), rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url('contact.jpeg') center center/cover no-repeat;
@@ -199,7 +199,7 @@ label {
         
       }
       .bg {
-          height: 543px;
+          height: 515px;
       }
       .bg1 {
       position: relative;
@@ -253,6 +253,6 @@ top:225px;
     }
     @media (min-width: 1024px) {
             .menu-box1{
-                right:0;
+              left:65%;
             }
         }
