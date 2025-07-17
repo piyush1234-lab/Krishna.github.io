@@ -87,7 +87,7 @@ html, body {
     #bg0 {
       position: relative;
       top:0px;
-      height:1578px;
+      height:1565px;
       width:100vw;
       padding: 100px 10px 120px;
       background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1), rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url('pppp1.jpg') center center/cover no-repeat;
@@ -179,7 +179,7 @@ html, body {
         
       }
       #bg0 {
-          height: 515px;          
+          height: 500px;          
       }
       #halo{
           top:270px;
