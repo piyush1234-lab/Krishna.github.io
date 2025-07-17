@@ -18,14 +18,15 @@ html, body {
 .menu-box1 {
   position: absolute;
   top:30px;
-  left:617px;
+  right:10px;
   display: flex;
   gap: 20px;
   background: transparent;
-  padding: 8px 12px;
+  padding: 8px 5px;
   border-radius: 5px;
   z-index: 10;
-  margin: 5px 10px;
+  margin: 5px 3px;
+  transform-origin: right;
 }
  #pp1 {
       font-size: 35px;
@@ -159,12 +160,11 @@ html, body {
   box-sizing: border-box;
 }
       .menu-box1 {
-        left:175px;
+        right:0px;
         top: 5px;
         flex-direction: row;
         gap: 15px;
         transform: scale(0.7);
-        
       }
 
       .d {
@@ -231,6 +231,6 @@ html, body {
 }
  @media (min-width: 1024px) {
             .menu-box1{
-                left:65%;
+                right:50px;
             }
         }
