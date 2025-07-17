@@ -27,7 +27,7 @@ html, body {
       transition: transform 0.5s ease-in-out;
     }
 
-   img {
+    img {
     padding:0;
       width: 100vw;
       height:500px;
@@ -277,6 +277,13 @@ html, body {
     }
         @media (min-width: 1024px) {
             .menu-box1{
-                right:10px;
+                right:50px;
             }
+            .bg1{
+                left:-29vw;
+            }
+             .nextpre {
+        gap: 700px;
+        left:120px;
+      }
         }
