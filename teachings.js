@@ -134,4 +134,33 @@ function pl() {
   document.addEventListener("touchstart", playOnce, { once: true });
   document.addEventListener("mousemove", playOnce, { once: true });
 }
-    
+
+let lastPlayedAudioId = null;
+
+function pauseAll() {
+    for (let i = 1; i <= 5; i++) { // 5 audios: au1 to au5
+        const audio = document.getElementById(`au${i}`);
+        if (audio && !audio.paused) {
+            lastPlayedAudioId = audio.id; // store last playing audio's ID
+            audio.pause();
+        }
+    }
+}
+
+function resumeLastAudio() {
+    if (lastPlayedAudioId) {
+        const audio = document.getElementById(lastPlayedAudioId);
+        if (audio) {
+            audio.play();
+        }
+    }
+}
+
+document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+        pauseAll();
+    } else {
+        resumeLastAudio();
+    }
+});
+
