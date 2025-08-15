@@ -28,6 +28,10 @@ html, body {
   margin: 5px 3px;
   transform-origin: right;
 }
+#bg0 {
+  transition: opacity 1s ease;
+  opacity: 1;
+}
  #pp1 {
       font-size: 35px;
       color: white;
