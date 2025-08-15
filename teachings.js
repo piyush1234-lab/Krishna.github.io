@@ -138,20 +138,26 @@ function pl() {
 let lastPlayedAudioId = null;
 
 function pauseAll() {
-    for (let i = 1; i <= 5; i++) { // 5 audios: au1 to au5
+    for (let i = 1; i <= 5; i++) {
         const audio = document.getElementById(`au${i}`);
-        if (audio && !audio.paused) {
-            lastPlayedAudioId = audio.id; // store last playing audio's ID
+        if (audio) {
+            if (!audio.paused) {
+                lastPlayedAudioId = audio.id;
+            }
             audio.pause();
+            audio.currentTime = 0; // Reset to start to avoid overlap
         }
     }
 }
 
 function resumeLastAudio() {
-    if (lastPlayedAudioId) {
+    // Resume ONLY if the user is still on the same verse
+    if (lastPlayedAudioId && document.visibilityState === "visible") {
         const audio = document.getElementById(lastPlayedAudioId);
         if (audio) {
-            audio.play();
+            audio.play().catch(() => {
+                // Some browsers block autoplay without user action
+            });
         }
     }
 }
@@ -163,4 +169,3 @@ document.addEventListener("visibilitychange", () => {
         resumeLastAudio();
     }
 });
-
