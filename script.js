@@ -23,7 +23,7 @@ function touend11(elem) {
 
 function updatepage() {
   const today = new Date();
-  const janmasthmi = today.getDate() === 16 && today.getMonth() === 7; // August is 7 (0-based)
+  const janmasthmi = today.getDate() === 04 && today.getMonth() === 8; // August is 7 (0-based)
 
   const bg0 = document.getElementById("bg0");
   const halo = document.getElementById("halo");
